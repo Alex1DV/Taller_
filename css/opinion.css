@@ -1,0 +1,563 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+html{
+	scroll-behavior: smooth;
+}
+main{
+	background-color:black ;/*EFEAEA*//**/
+}
+.img{
+	color: black;
+	width: 35px;
+	height: 35px;
+	right: 25px;
+}
+body{
+	background-color:black ;
+	font-family: georgia,times,serif;
+	color: #333; /*#333*/
+	font-size: 1.2rem;
+	line-height: 1.4em;
+	margin: 0;
+}
+p{
+	margin-bottom: 1.6em;
+}
+.container{ /*Esto es para centrar el contenido*/
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto
+}
+h1{
+	line-height: 1.3em;
+	font-size: 2rem;
+}
+.header{
+	background: #171717; /*#333*/
+	color: white;
+	padding: 2rem 0; /*2rem ARRIBA Y ABAJO 0 COSTADOS*/
+
+	position: fixed;/*La posicion va a see fija*/
+	left: 0; /*Pegado a la izquierda*/
+	top: 0; /*Pegado arriba*/
+	width: 100%;
+
+	z-index: 100;
+	/*right: 0;*/
+
+}
+.header a{
+	color: white;
+	text-decoration: none;
+
+}
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap; 
+	
+
+}
+
+.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+.navigation ul li{
+	display: inline-block;
+}
+.navigation ul li a{
+	display: block;
+	padding: 0.5rem 1rem ;
+	transition: all 0.4s linear;
+	border-radius: 5px;
+}
+.navigation ul li a:hover{
+	background:#4a4a4a;
+
+}
+.logo{
+	padding:0;
+	letter-spacing: 5px;
+	font-size: 1.2em;
+	text-transform: uppercase;
+
+}
+.logo:hover{
+	color: black;
+	transition: all 0.9s linear;
+}
+.menu-icon{
+	display: none;
+}
+.main{
+	padding: 12rem; /*Para posicionar bien la cabezera*/
+}
+.footer{
+	background: #f2f2f2;
+	padding: 4rem 0;
+	text-align: center;
+	margin-top: 6rem;
+}
+
+
+@media only screen and (max-width: 767px){
+
+.menu-icon{
+	display: block;
+	cursor: pointer; /*hace que se muestre como un enlace*/
+	padding: 0.5rem 1rem;
+}
+.navigation{
+	width: 100%;
+	margin-top: 1rem;
+}
+.navigation ul{
+	display: none;
+}
+.navigation ul.show{
+	display: block;	
+}
+.navigation ul li{
+	display:block;
+}
+.navigation ul li a{
+	display: block;
+	padding: 0.5rem 0 ;
+	transition: all 0.4s linear;
+	border-radius: 5px;
+}
+.navigation ul li a:hover{
+	background:#4a4a4a;
+
+}
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*BANNER*/
+section{
+	width: 100%;
+	margin-bottom: 25px;
+	/*padding-left: 95px;*/
+}
+#banner{
+	margin-top: 50px;
+	position: relative;
+}
+#banner img{
+	width: 100%;
+	height: 600px;
+	filter: contrast(65%);
+
+}
+
+.logoTall{
+	position: absolute;
+	left: 30%;
+	top: -300%;
+}
+
+#banner .container{
+	position: absolute; /*Para que se posicione en base a banner*/
+	top: 50%;
+	left: 50%;
+	/*left: 20%;
+	bottom: 60%;*/
+	transform: translateX(-50%) translateY(-50%); /*Para que el texto este en el mmedio*/
+	color: #fff;
+
+}
+#banner h2{
+	font-size: 28px;
+	color: whitesmoke;
+}
+#banner p{
+	color: whitesmoke;
+}
+#banner h1{
+	display: block;
+	width: 100px;
+	color: whitesmoke;
+	padding: 7px;
+	margin-top: 10px;
+	font-size: 45px;
+
+
+}
+
+
+/*Para cauando la pantala tenga un ancho minomo a 480px, se ajusta para PC*/
+@media (min-width: 480px){
+	#banner h2{ 
+		font-size: 40px;
+	}
+	#banner a{
+		margin-top: 25px;
+	}
+}
+/*Para la imagen*/
+@media (min-width: 768px){
+	#banner{
+		height: 450px;
+		overflow: hidden;
+	}
+	#banner img{
+		height: auto;
+		margin-top: -150;
+	}
+}
+
+@media (min-width: 1024px){
+	#banner img{
+		margin-top: -200px;
+	}
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*Tabla*/
+
+
+.titulo_opinion{
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+.titulo_tabla{
+	text-align: center;
+	color: white;
+	font-size: 25px;
+}
+.tr1{
+	background-color: darkred;
+	border: 1px solid black;
+
+}
+th{
+	color: darkred;
+	font-size: 20px;
+	border: 1px solid darkred;
+}
+input{
+	color: darkred;
+}
+td{
+border: 1px solid darkred;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*Seccion con los contenedores */
+.seccion_principal{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+
+
+}
+.seccion1{
+	width: 25%;
+	margin: 0 auto;
+	
+}
+.seccion2{
+	width: 50%;
+	margin: 0 auto;
+	/*border: 2px solid darkgrey;*/
+}
+
+.seccion3{
+	width: 25%;
+	margin: 0 auto;
+	
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+footer{
+	background-color:#171717;
+	height: auto;
+	width: 100%;
+	font-family: "Open Sans";
+	color: white;
+
+}
+.footer-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+}
+.footer-container h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+.footer-container p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+
+}
+.redes{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.redes li{
+	margin: 0 10px;
+}
+.redes a{
+	text-decoration: none;
+	color: white;
+}
+.redes a img{
+	font-size: 1.1rem;
+	transition: color .4s ease;
+}
+.redes img:hover{
+	color: aliceblue;
+}
+.footer-bottom{
+	background: black;
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+}
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+
+}
+.footer-bottom span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*Cubo visto en clase con pocos cambios*/
+.cubo, .cubo, .cara {
+	width: 200px;
+	height: 200px;
+	display: flex;
+}
+.cubo .cara{
+ position: absolute;
+ /*position: relative;*/
+ color: #fff;
+ font-size: 80px;
+ text-align: center;
+}
+.cubo{
+	margin: 100px auto;
+}
+.cubo .cara#superior{
+	/*background-color:darkred ;*/
+	background-image: url("../Imagenes/Logo_Taller_Negro.jpeg"); /*Estos son los cambios*/ 
+}
+.cubo .cara#frente{
+	/*background-color:blueviolet ;*/
+	background-image: url("../Imagenes/Logo_Taller_Negro.jpeg");
+}
+
+.cubo .cara#atras{
+	/*background-color:brown ;*/
+	background-image: url("../Imagenes/Logo_Taller_Negro.jpeg");
+}
+
+.cubo .cara#derecha{
+	/*background-color:orange ;*/
+	background-image: url("../Imagenes/Logo_Taller_Negro.jpeg");
+}
+
+.cubo .cara#izquierda{
+	/*background-color:green ;*/
+	background-image: url("../Imagenes/Logo_Taller_Negro.jpeg");
+}
+
+.cubo .cara#inferior{
+	/*background-color:yellow ;*/
+	background-image: url("../Imagenes/Logo_Taller_Negro.jpeg");
+}
+.cubo{
+	transform-style: preserve-3d;
+	transform: perspective(700px) rotateX(-30deg) rotateY(-30deg) ;
+}
+
+.cubo .cara#derecha {
+	transform: rotateY(-90deg) translateZ(-100px);
+}
+.cubo .cara#superior {
+	transform: rotateX(-90deg) translateZ(-100px);
+}
+.cubo .cara#frente{
+	transform: translateZ(-100px);
+}
+.cubo .cara#atras{
+	transform: translateZ(100px);
+}
+.cubo .cara#izquierda{
+	transform: rotateY(90deg) translateZ(-100px);
+}
+.cubo .cara#inferior{
+	transform: rotateX(90deg) translateZ(-100px);
+}
+.cubo {
+	animation:  rotar 7s infinite linear;
+}
+@keyframes rotar {
+	0%{
+		transform: rotateX(0deg) rotateY(0deg);
+
+	}
+	100%{
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+}
+.limpiar{
+	background-color: black;
+	border: 2px solid darkred;
+	padding: 5px;
+	font-size: 15px;
+}
+.enviar{
+	background-color: black;
+	border: 2px solid darkred;
+	padding: 5px;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animacion para los titulos*/
+@keyframes mover{
+	0%{
+		transform: translate(45%);
+		
+		
+	}
+}
+
+
+
+
+#dialog{
+	color: darkred;
+}
+
+
+
+
+
+
+
+/*Id que contiene 4 imagenes */
+#animado{
+	opacity: 0;
+	transition: all 1.0s;
+}
+.mostrarArriba {
+	animation: mostrarArriba 2s;
+}
+@keyframes mostrarArriba{
+	0%{
+		transform: translateY(-90px); /* se va hacia abajo*/
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+#animado2{
+	opacity: 0;
+	transition: all 1.0s;
+}
+.mostrarArriba {
+	animation: mostrarArriba 2s;
+}
+@keyframes mostrarArriba{
+	0%{
+		transform: translateY(-90px); /* se va hacia abajo*/
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+
+#animado3{
+	opacity: 0;
+	transition: all 1.0s;
+}
+.mostrarArriba {
+	animation: mostrarArriba 2s;
+}
+@keyframes mostrarArriba{
+	0%{
+		transform: translateY(-90px); /* se va hacia abajo*/
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+
+
+
+.ventana{
+	background-color: black;
+	width: 30%;
+	color: darkred;
+	font-size: 18px;
+	text-align: center;
+	padding: 33px;
+	min-height: 250px;
+	border-radius: 22px;
+	position: absolute;
+	left: 35%;
+	bottom: -50%;
+	display: none;
+	
+}
+.equix{
+	padding-left: 90%;
+	font-size: 30px;
+	color: darkred;
+	
+}
+.ventana a{
+	text-decoration: none;
+}
+
+
+@media (max-width: 1299.98px){
+	.logoTall{
+		
+		left: 25%;
+		top: -217%;
+	}
+}

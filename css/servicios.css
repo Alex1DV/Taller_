@@ -1,0 +1,651 @@
+/*EL MENU FIJO Y EL EL BANNER LLEVAN LAS MISMAS REGLAS CSS EN TODAS LAS PAGINAS*/
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+html{
+	scroll-behavior: smooth;
+}
+main{
+	background-color:black ;/*EFEAEA*//**/
+}
+.img{
+	color: black;
+	width: 35px;
+	height: 35px;
+	right: 25px;
+}
+body{
+	background-color: black;
+}
+body{
+	/*background-color: tomato;*/
+	font-family: georgia,times,serif;
+	color: #333; /*#333*/
+	font-size: 1.2rem;
+	line-height: 1.4em;
+	margin: 0;
+}
+p{
+	margin-bottom: 1.6em;
+}
+.container{ /*Esto es para centrar el contenido*/
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto
+}
+h1{
+	line-height: 1.3em;
+	font-size: 2rem;
+}
+.header{
+	background: #171717; /*#333*/
+	color: white;
+	padding: 2rem 0; /*2rem ARRIBA Y ABAJO 0 COSTADOS*/
+
+	position: fixed;/*La posicion va a see fija*/
+	left: 0; /*Pegado a la izquierda*/
+	top: 0; /*Pegado arriba*/
+	width: 100%;
+	
+	z-index: 100;
+	/*right: 0;*/
+
+}
+.header a{
+	color: white;
+	text-decoration: none;
+
+}
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap; 
+
+}
+.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+.navigation ul li{
+	display: inline-block;
+}
+.navigation ul li a{
+	display: block;
+	padding: 0.5rem 1rem ;
+	transition: all 0.4s linear;
+	border-radius: 5px;
+}
+.navigation ul li a:hover{
+	background:#4a4a4a;
+
+}
+.logo{
+	padding:0;
+	letter-spacing: 5px;
+	font-size: 1.2em;
+
+
+}
+.logo:hover{
+	color: black;
+	transition: all 0.9s linear;
+}
+.menu-icon{
+	display: none;
+}
+.main{
+	padding: 12rem; /*Para posicionar bien la cabezera*/
+}
+.footer{
+	background: #f2f2f2;
+	padding: 4rem 0;
+	text-align: center;
+	margin-top: 6rem;
+}
+
+
+@media only screen and (max-width: 767px){
+
+.menu-icon{
+	display: block;
+	cursor: pointer; /*hace que se muestre como un enlace*/
+	padding: 0.5rem 1rem;
+}
+.navigation{
+	width: 100%;
+	margin-top: 1rem;
+}
+.navigation ul{
+	display: none;
+}
+.navigation ul.show{
+	display: block;	
+}
+.navigation ul li{
+	display:block;
+}
+.navigation ul li a{
+	display: block;
+	padding: 0.5rem 0 ;
+	transition: all 0.4s linear;
+	border-radius: 5px;
+}
+.navigation ul li a:hover{
+	background:#4a4a4a;
+
+}
+}
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+section{
+	width: 100%;
+	margin-bottom: 25px;
+	/*padding-left: 95px;*/
+}
+#banner{
+	margin-top: 50px;
+	position: relative;
+}
+#banner img{
+	width: 100%;
+	height: 600px;
+	filter: contrast(65%);
+
+}
+
+.logoTall{
+	position: absolute;
+	left: 30%;
+	top: -198%;
+}
+
+#banner .container{
+	position: absolute; /*Para que se posicione en base a banner*/
+	top: 50%;
+	left: 50%;
+	/*left: 20%;
+	bottom: 60%;*/
+	transform: translateX(-50%) translateY(-50%); /*Para que el texto este en el mmedio*/
+	color: #fff;
+
+}
+#banner h2{
+	font-size: 28px;
+	color: whitesmoke;
+}
+#banner p{
+	color: whitesmoke;
+}
+#banner h1{
+	display: block;
+	width: 100px;
+	color: whitesmoke;
+	padding: 7px;
+	margin-top: 10px;
+	font-size: 45px;
+
+
+}
+
+
+/*Para cauando la pantala tenga un ancho minomo a 480px, se ajusta para PC*/
+@media (min-width: 480px){
+	#banner h2{ 
+		font-size: 40px;
+	}
+	#banner a{
+		margin-top: 25px;
+	}
+}
+/*Para la imagen*/
+@media (min-width: 768px){
+	#banner{
+		height: 450px;
+		overflow: hidden;
+	}
+	#banner img{
+		height: auto;
+		margin-top: -150;
+	}
+}
+
+@media (min-width: 1024px){
+	#banner img{
+		margin-top: -200px;
+	}
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*Contenedor de la muestra del trabajo realizado*/
+
+
+.header1 h1{
+	width: 1600px;
+	max-width: 95%;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	text-transform:uppercase ;
+	
+	
+}
+/*-------------------------------------------------------------*/
+/*Galeria*/
+.galeria{
+	width: 1200px;
+	max-width: 95%;
+	margin: auto;
+	list-style: none;
+	/*border: 2px solid darkred;*/
+	box-sizing: border-box;
+
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.galeria img{
+	width: 289px; /*289*/
+	height: 575px; /*575*/
+	object-fit: cover;
+}
+.galeria img:hover{
+	transform:scale(1.1); /*"SCALE" Hace mas grande la imagen*/
+    transition:.50s ease; /*La duracion del transorm*/
+    z-index: 1;/*Sobrepone la imagen(sobre las imagenes de al lado) cuando se pone el mouse sobre ella*/
+    object-fit: cover;
+}
+.galeria li{
+	margin: 5px;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*Estilos del Modal*/
+body{
+	margin: 0;
+}
+.modal {
+	display: none; /*Si no ah pulsado las imagenes se van a ver en orden...*/
+	
+
+}
+.modal:target {/*Cuando pulse la imagen se va a ver todo esto*/
+	display: block;
+	transition: all 0.5s;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.8); /*Lo hace tranparente*/
+	top: 0;
+	left: 0;
+	padding-top: 7%;
+	padding-left: 35%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.imagen{
+	width: 30%; /*35*/
+	height: 81%; /*79*/
+	object-fit: cover; /*Para que la imagen se vea mejor*/
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.imagen a{ /*botones de derecha e izquierda*/
+	color: darkred;
+	font-size: 50px;
+	text-decoration: none;
+	margin: 0 2%;
+	/*background: black;
+	border-radius: 50%;*/
+	
+
+
+}
+.imagen a:nth-child(2) { /*esto es para el >*/
+	margin: 0;
+	height: 100%;
+	flex-shrink: 2;
+}
+.imagen img{
+	width: 500px;
+	height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+
+	
+	box-sizing: border-box;
+}
+
+.salir{ /*Boton X para salir*/
+	display: block;
+	
+	width: 2%;
+	height: 10%;
+	margin: auto 14%;
+	align-items: center;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	
+	color: darkred;
+	border-radius:50%;
+	line-height: 25px; /*25px*/
+}
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*Titulo de la descripcion*/
+.servicios_txt2{ /*contenedor*/
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	background-color: black;
+	/*border: 2px solid darkred;*/
+}
+.text2 h1{
+	color: white;
+	text-align: center;
+	padding: 20px;
+	padding-left: 350px;
+	
+
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*Descripcion de los servicios*/
+.servicios_txt{
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	background-color: black;
+	/*border: 2px solid darkred;*/
+	
+}
+
+.text h1{
+	color: darkred;
+	text-align: center;
+
+}
+.text p{
+	color: white;
+	text-align: justify;
+
+}
+.text img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+.text .buchin{ /*Imagen*/
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*ASIDE*/
+#blog{
+	width: 240%; /**/
+	display: flex;
+    text-align: center;
+    background-color:black ; /*prueba #EDEDED*/	
+    padding-left: 50px;
+    /*border: 2px solid darkred;*/
+}
+
+#blog .container{
+	/*border: 1px solid black;*/
+	justify-content: center;
+	flex-wrap: wrap;
+
+
+}
+.container h1{
+	color: darkred;
+	text-align: left;
+	text-align: center;
+
+}
+.container p{
+	color: white;
+	text-align: justify;
+
+}
+#blog img{
+	width: 289px;
+	height: 575px;
+	object-fit: cover;
+}
+#blog .MecGen{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+#blog .MecGen2{
+	width: 100%;
+	height: 20%;
+
+}
+.MecGen:hover{
+	transform:scale(1.1); /*"SCALE" Hace mas grande la imagen*/
+    transition:.50s ease; /*La duracion del transorm*/
+    z-index: 1;/*Sobrepone la imagen(sobre las imagenes de al lado) cuando se pone el mouse sobre ella*/
+    object-fit: cover;
+}
+
+.buchin:hover{
+	transform:scale(1.1); /*"SCALE" Hace mas grande la imagen*/
+    transition:.50s ease; /*La duracion del transorm*/
+    z-index: 1;/*Sobrepone la imagen(sobre las imagenes de al lado) cuando se pone el mouse sobre ella*/
+    object-fit: cover;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+footer{
+	background-color:#171717;
+	height: auto;
+	width: 100%;
+	font-family: "Open Sans";
+	color: white;
+
+}
+.footer-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+
+}
+.footer-container h3{
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+.footer-container p{
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+
+}
+.redes{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.redes li{
+	margin: 0 10px;
+}
+.redes a{
+	text-decoration: none;
+	color: white;
+}
+.redes a img{
+	font-size: 1.1rem;
+	transition: color .4s ease;
+}
+.redes img:hover{
+	color: aliceblue;
+}
+.footer-bottom{
+	background: black;
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+}
+.footer-bottom p{
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+
+}
+.footer-bottom span{
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animacion para los titulos*/
+@keyframes mover{
+	0%{
+		transform: translate(45%);
+		
+		
+	}
+}
+@keyframes mover2{
+	0%{
+		transform: translate(15%);
+		
+		
+	}
+}
+
+
+
+/*Id que contiene 4 imagenes */
+#animado{
+	opacity: 0;
+	transition: all 1.0s;
+}
+.mostrarArriba {
+	animation: mostrarArriba 2s;
+}
+@keyframes mostrarArriba{
+	0%{
+		transform: translateY(-90px); /* se va hacia abajo*/
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+
+/*Id que contiene 4 imagenes */
+#animado2{
+	opacity: 0;
+	transition: all 1.0s;
+}
+.mostrarArriba2 {
+	animation: mostrarArriba2 2s;
+}
+@keyframes mostrarArriba2{
+	0%{
+		transform: translateX(-30px); /* se va hacia abajo*/ /*60*/
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+
+
+
+@media (max-width: 1299.98px){
+	.logoTall{
+		
+		left: 25%;
+		top: -217%;
+	}
+}
+
+@media (max-width: 1275.98px){ /*1199.98*/
+	.galeria img{
+		width: 259px; /*289*/
+		height: 535px; /*575*/
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 1199.98px){
+	.text{
+		width: 50%;
+	}
+	#blog{
+		width: 50%;
+	}
+}
+@media (min-width: 1199.98px){
+	@keyframes mover2{
+		0%{
+			transform: translate(7%);
+			
+			
+		}
+	}
+	
+}
+
+@media (max-width:991.98px){
+	.logoTall{
+		position: absolute;
+		left: 29.5%;
+		top: -230%;
+	}
+}
+@media (max-width: 991.98px){
+	.galeria img{
+		width: 220px; /*289*/
+		height: 500px; /*575*/
+		object-fit: cover;
+	}
+}
+
+
+
+
+
+

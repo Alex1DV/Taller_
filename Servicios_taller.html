@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="Servicios Taller Solis"/> <!-- <meta> no se cierra, solo se usa por sus funciones -->
+    <meta name="Author" content="Alexander"/>
+    <meta name="keywords" content="Servicios"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--Que el ancho de la pagina sea igual que al ancho del dispositivo --> 
+	<title> Servicios Taller Solis</title> <!--Servicios del Taller -->
+	<link rel="icon" href="Imagenes/LOGO_STICKER.svg" sizes="80x80" type="image/svg">
+	<link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/servicios.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container logo-nav-container">
+			<img class="img" src="Imagenes/herram.svg" alt="logo">
+			<a href="#" class="logo">SERVICIOS</a>
+			<span class="menu-icon">Ver men&uacute;</span>
+			<nav class="navigation">
+				<ul >
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="Servicios_taller.html">Servicios</a></li>
+					<li><a href="Contactar_Taller.html">Contactos</a></li>
+					<li><a href="Opinion_Pagina.html">Tu Opini&oacute;n</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<br>
+		<main>
+			<section id="banner">
+				<img src="Imagenes/mec2.jpg" alt="Mecanico_Taller">
+				<div class="container"><!--contenedor-texto -->
+					<img class="logoTall" src="Imagenes/LOGO_STICKER.svg" alt="LogoT">
+					<h2>Taller Sol&iacute;s Motor Sport</h2>
+					<p>Mec&aacute;nica Automotriz</p>
+					<h1>Servicios</h1>
+				</div>
+			<!--Aqui van las imagenes de la galeria principal -->	
+			</section>
+			<header class="header1">
+				<h1 id="volv">Con&oacute;zca Nuestro Trabajo</h1>
+			</header>
+			<br>
+			<div id="animado">
+				<ul class="galeria">
+					<!--Se les pone ese href para que cuando se pulse en cada una de las imagenes, se vean las imagenes pero mas grande... -->
+					
+						<li><a href="#img1"><img src="Imagenes/work18.2.jpeg" alt="galeria"></a></li>
+						<li><a href="#img2"><img src="Imagenes/work8.jpeg " alt="galeria"></a></li> <!--#img2-->
+						<li><a href="#img3"><img src="Imagenes/Trabajo11.jpeg" alt="galeria"></a></li>
+						<li><a href="#img4"><img src="Imagenes/work7.jpeg" alt="galeria"></a></li>
+				</ul>
+			</div>
+			<div id="animado2">
+				<ul class="galeria"> 
+					<li><a href="#img5"><img src="Imagenes/work6,3.jpeg" alt="galeria"></a></li>
+					<li><a href="#img6"><img src="Imagenes/Trabajo6.jpeg" alt="galeria"></a></li>
+					<li><a href="#img7"><img src="Imagenes/Trabajo7.jpeg" alt="galeria"></a></li>
+					<li><a href="#img8"><img src="Imagenes/Trabajo8.jpeg" alt="galeria"></a></li>
+				</ul>
+				
+			</div>
+			
+			<!--Estos siguientes comentarios son validos para los 8 divs siguientes -->
+			<!--La clase MODAL se va a ejecuatr con un TARGET -->
+			
+			<!--En el w3c VALIDATOR, tira error de la LINEA 70 A LA 140, pero son cosas que asi sirven, y desde un principio las quise de esa manera-->
+
+			<div class="modal" id="img1">
+				<div class="imagen" >
+					<a href="#img8"> <  </a> <!--Lo va a mandar a la imagen anterior -->
+					<a href=""><img src="Imagenes/work18.2.jpeg" alt="galeria"></a>
+					<a href="#img2">></a> <!--Lo va a mandar a la imagen siguiente -->
+				</div>
+				<a class="salir" href="#volv">X</a> <!--Esto es para salir-->
+			</div>
+
+			<div class="modal" id="img2">
+				<div class="imagen" >
+					<a href="#img1"><</a>
+					<a href=""><img src="Imagenes/work8.jpeg" alt="galeria"></a>
+					<a href="#img3">></a>
+				</div>
+				<a class="salir" href="#volv">X</a>
+			</div>
+
+			<div class="modal" id="img3">
+				<div class="imagen" >
+					<a href="#img2"><</a>
+					<a href=""><img src="Imagenes/Trabajo11.jpeg" alt="galeria"></a>
+					<a href="#img4">></a>
+				</div>
+				<a class="salir" href="#volv">X</a>
+			</div>
+
+			<div class="modal" id="img4">
+				<div class="imagen" >
+					<a href="#img3"><</a>
+					<a href=""><img src="Imagenes/work7.jpeg" alt="galeria"></a>
+					<a href="#img5">></a>
+				</div>
+				<a class="salir" href="#volv">X</a>
+			</div>
+
+			<div class="modal" id="img5">
+				<div class="imagen" >
+					<a href="#img4"><</a>
+					<a href=""><img src="Imagenes/work6,3.jpeg" alt="galeria"></a>
+					<a href="#img6">></a>
+				</div>
+				<a class="salir" href="#volv">X</a>
+			</div>
+
+			<div class="modal" id="img6">
+				<div class="imagen" >
+					<a href="#img5"><</a>
+					<a href=""><img src="Imagenes/Trabajo6.jpeg" alt="galeria"></a>
+					<a href="#img7">></a>
+				</div>
+				<a class="salir" href="#volv">X</a>
+			</div>
+
+			<div class="modal" id="img7">
+				<div class="imagen" >
+					<a href="#img6"><</a>
+					<a href=""><img src="Imagenes/Trabajo7.jpeg" alt="galeria"></a>
+					<a href="#img8">></a>
+				</div>
+				<a class="salir" href="#volv">X</a>
+			</div>
+
+			<div class="modal" id="img8">
+				<div class="imagen" >
+					<a href="#img7"><</a>
+					<a href=""><img src="Imagenes/Trabajo8.jpeg" alt="galeria"></a>
+					<a href="#img1">></a>
+				</div>
+				<a class="salir" href="#volv">X</a>
+			</div>
+			<section class="servicios_txt2">
+				<div class="text2">
+					<h1>Descripci&oacute;n de Nuestros Servicios</h1>
+				</div>
+			</section>
+			<!--Aqui va a el contenedor que va a tener dos contenedores, uno a la derecha y otro a la izquierda -->
+			<section class="servicios_txt"> <!--Contenedor de la derecha -->
+				<div class="text">
+					
+					<br>
+					<br>
+					<h1 id="animacion" >Mantenimientos</h1>
+					<br>
+					<p id="animacion2">Porque el mantenimiento de tu vehículo es esencial, en Taller Solís realizamos el mantenimiento de frenos en general, revisión de fluidos como aceite y coolan, revisión de bushignes, robles y sistema de suspensión.</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div class="parallax">
+						<img class="buchin" src="Imagenes/Riteve2.jpg" alt="galeria">
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h1 id="animacion3">Frenos</h1>
+					<br>
+					<p id="animacion4">En este taller realizamos en tu veh&iacute;culo un chequeo de sistemas de frenados en general. </p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<img class="buchin" src="Imagenes/buchin3.2.jpeg" alt="galeria">
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h1 id="animacion5">Escaneo y Programaci&oacute;n</h1>
+					<br>
+					<p id="animacion6">En el Taller Solís contamos con las mejores herramientas para el sistema eléctrico y computación de tu vehículo.
+					Con el escaneo nos encargamos de borrar los datos de los códigos de los sensores malos, y revisamos los sensores buenos y malos.
+					Con la programación nos encargamos de programar llaves y desbloquear sistemas de seguridad.
+						 </p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					
+					<br>
+					<br>
+					<img class="buchin" src="Imagenes/work25,2.jpeg" alt="galeria">
+				</div>
+
+				<aside id="blog"> <!--Contenedor de la izquierda -->
+					<div class="container">
+						
+						<br>
+						<br>
+						<img class="MecGen" src="Imagenes/mantenimiento1.jpg" alt="galeria">
+						<br>
+						<br>
+						<br>
+					    <br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<h1 id="animacion7">Revisión para Riteve</h1>
+						<br>
+						<p id="animacion8">En el Taller Solís reconocemos la importancia de respetar las leyes viales del país, por eso, antes de mandar tu vehículo a Riteve le realizamos el mantenimiento en general con los frenos, aceites, sistema de luces, y sistema de suspensiones y emisión de gases. </p>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<img class="MecGen" src="Imagenes/frenosh.jpeg" alt="galeria">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<h1  id="animacion9">Bushignes</h1>
+						<br>
+						<p id="animacion10">Nos encargamos de revisar los bushignes del sistema de suspensi&oacute;n.  </p>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<img class="MecGen" src="Imagenes/scannerF.jpg" alt="galeria">
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<h1 id="animacion11">Mec&aacute;nica en General</h1>
+						<br>
+						<p id="animacion12"> En el Taller Solís le realizamos a tu veh&iacute;culo el cambio de pistones, cambio de berings, bombas de aceite, rectificaci&oacute;n de caras, entre otras cosas.<br>
+						Realizamos tambi&eacute;n el arreglo de cajas de direcci&oacute;n y cajas de cambio.</p>
+						<br>
+						
+					</div>					
+				</aside>
+				
+			</section>
+		</main>
+	<br>
+	<!--Footer -->
+	<footer>
+		<div class="cont">
+			<div class="footer-container">
+				<h3>Taller Solís</h3>
+				<p>Para nosotros es un gusto atenderles</p>
+				<ul class="redes">
+					<li><a href="https://www.instagram.com/tallersolisms/"><img src="Imagenes/I_D.svg" alt="F"></a></li>
+					<li><a href="https://www.google.com/maps/place/Taller+Solis/@10.0722807,-84.3911664,831m/data=!3m1!1e3!4m5!3m4!1s0x8fa05b4a1e3eb16f:0x3ce0be3f42743274!8m2!3d10.0728646!4d-84.3917645?hl=es">
+					<img src="Imagenes/M_D3.svg" alt="f"></a></li>
+				</ul>
+					
+			</div>
+			<div class="footer-bottom">
+				<p>copyright &copy;2021 tallerSolis. diseñado por <span>Alex DV</span></p>
+			</div>
+		</div>
+	</footer>
+	<br>
+</body>
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" > </script>
+	<script src="js/serviciosScript.js" > </script>
+
+</html>

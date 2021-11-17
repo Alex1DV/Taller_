@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="Description" content="Opinion Pagina Taller"/> <!-- <meta> no se cierra, solo se usa por sus funciones -->
+    <meta name="Author" content="Alexander"/>
+    <meta name="keywords" content="Encuesta"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!--Que el ancho de la pagina sea igual que al ancho del dispositivo --> 
+	<title> Opini&oacute;n Taller Solis</title> <!--Encuesta sobre la pagina del taller  -->
+	<link rel="icon" href="Imagenes/LOGO_STICKER.svg" sizes="80x80" type="image/svg">
+	<link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/opinion.css">
+
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+
+</head>
+<body>
+
+	<header class="header">
+		<div class="container logo-nav-container">
+			<img class="img" src="Imagenes/herram.svg" alt="img">
+			<a href="#" class="logo">tu opini&oacute;n</a>
+			<span class="menu-icon">Ver men&uacute;</span>
+			<nav class="navigation">
+
+				<ul >
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="Servicios_taller.html">Servicios</a></li>
+					<li><a href="Contactar_Taller.html">Contactos</a></li>
+					<li><a href="Opinion_Pagina.html">Tu Opini&oacute;n</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<br>
+	<main>
+		<section id="banner">
+			<img src="Imagenes/mec2.jpg" alt="Mecanico_Taller">
+			<div class="container"><!--contenedor-texto -->
+				<img class="logoTall" src="Imagenes/LOGO_STICKER.svg" alt="img">
+				<h2>Taller Sol&iacute;s Motor Sport</h2>
+				<p>Mec&aacute;nica Automotriz</p>
+				<h2>Tu Opini&oacute;n</h2>
+			</div>
+		</section>
+
+
+
+		<h1 class="titulo_opinion" >Para nosotros es muy importante tu opini&oacute;n</h1>
+		<br>
+		<section class="seccion_principal"><!--Esto es para contener los 3 divs nada mas -->
+			
+				<div class="seccion1">
+					<div class="cubo"> <!--Cubo que vimos en clase con unos pocos cambios -->
+						<div class="cara" id="superior"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div> <!--No se que pasa, estos SVGs no los agarra, pone todo en un fondo negro, lo deje asi porque me gusta como queda. -->
+						<div class="cara" id="frente"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div>
+						<div class="cara" id="derecha"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div>
+						<div class="cara" id="izquierda"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div>
+						<div class="cara" id="atras"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div>
+						<div class="cara" id="inferior"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div>
+					</div>
+					
+					<!--<div id="animado2">
+						<img src="Imagenes/LOGO_STICKER.svg" alt="logo">
+						<img src="Imagenes/LOGO_STICKER.svg" alt="logo">
+					</div>-->
+					
+				</div>
+			
+			
+			<div class="seccion2">
+			<form action="mailto:alexduva12@hotmail.com"method="post"> <!--Se manda la infromaciona mi correo -->
+				<table  >
+					<tr class="tr1">
+						<td colspan="2">
+						<div id="animado">
+							<br>
+							<h2 class="titulo_tabla">Quer&eacute;mos Conocer Tu Opini&oacute;n</h2>
+							<br>
+						</div>
+						
+						</td>	
+					</tr>
+				
+					<tr>
+						<th id="animacion">¿Te gust&oacute; la p&aacute;gina web?</th>
+						<td>
+							<input  type="radio" name="trabaja">SI <br>
+							<input type="radio" name="trabaja">NO
+						</td>
+					
+					</tr>
+				
+					<tr>
+							<th id="animacion2">¿Te fue f&aacute;cil navegar por este sitio web?</th>
+						<td>
+							<input type="radio" name="facil">SI <br>
+							<input type="radio" name="facil">NO
+						</td>
+					</tr>
+					
+					<tr>
+						<th id="animacion3">¿Te result&oacute; &uacute;til este sitio web?</th>
+						<td>
+							
+							<input type="radio" name="util">SI <br>
+							<input type="radio" name="util">NO
+							
+							
+						</td>
+					</tr>
+				
+					<tr>
+						<th id="animacion4"><label for="numero1">Califica tu satisfacci&oacute;n</label></th>
+						<td><input type="number" name="numero1" id="numero1" min="0" max="10" step="1"></td>
+					</tr>
+					
+					<tr>
+						<th id="animacion5"><label for="comentario">Comentario</label></th>
+						<td><textarea rows="10" cols="35" name="comentario" id="comentario"></textarea></td>
+					</tr>
+					<tr>
+						<td>
+							<input class="limpiar" type="reset" name="Limpiar Formulario">
+						</td>
+						<td>
+							<input onclick="abrir()" class="enviar" type="submit" name="Enviar Datos">
+						
+						</td>
+					</tr>
+				</table>
+				
+				<br>
+			</form>
+			<div  title="Basic dialog" class="ventana" id="vent">
+				<a  href="javascript:cerrar()"><p class="equix">X</p></a>
+				<p>Gracias por haber comentado sobre nuestro sitio web, esperamos que visites nuestro Taller Solis y compartas este sitio.</p>
+			</div>
+			</div>
+			<!--Cubo en clase -->
+			
+			<div class="seccion3">
+				<div class="cubo"> <!--Cubo que vimos en clase con unos pocos cambios -->
+					<div class="cara" id="superior"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div> <!--No se que pasa, estos SVGs no los agarra, pone todo en un fondo negro, lo deje asi porque me gusta como queda. -->
+					<div class="cara" id="frente"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div>
+					<div class="cara" id="derecha"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div>
+					<div class="cara" id="izquierda"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div>
+					<div class="cara" id="atras"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div>
+					<div class="cara" id="inferior"><img src="Imagenes/LOGO_STICKER.svg" alt="img"></div>
+				</div>
+				
+				<!--<div id="animado3">
+					<img src="Imagenes/LOGO_STICKER.svg" alt="">
+					<img src="Imagenes/LOGO_STICKER.svg" alt="">
+				</div>-->
+				
+			</div>
+		</section>
+		<br>
+		
+			
+		
+		<br>
+	</main>
+	
+	
+	<!--FOOTER -->
+	<footer>
+		<div class="cont">
+			<div class="footer-container">
+				<h3>Taller Solís</h3>
+				<p>Para nosotros es un gusto atenderles</p>
+				<ul class="redes">
+					<li><a href="https://www.instagram.com/tallersolisms/"><img src="Imagenes/I_D.svg" alt="img"></a></li>
+					<li><a href="https://www.google.com/maps/place/Taller+Solis/@10.0722807,-84.3911664,831m/data=!3m1!1e3!4m5!3m4!1s0x8fa05b4a1e3eb16f:0x3ce0be3f42743274!8m2!3d10.0728646!4d-84.3917645?hl=es">
+					<img src="Imagenes/M_D3.svg" alt="img"></a></li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p>copyright &copy;2021 tallerSolis. diseñado por <span>Alex DV</span></p>
+			</div>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"> </script>
+	<script src="js/opinionScript.js" type="text/javascript"> </script>
+</body>
+
+</html>
