@@ -325,7 +325,7 @@ section{
 	width: 100%;
 	max-width: 1600px;
 	overflow: hidden;
-	/*border: 5px solid black;*/
+	border: 5px solid black;
 	
 	margin: auto;
 }
