@@ -326,7 +326,7 @@ section{
 	max-width: 1600px;
 	overflow: hidden;
 	border: 5px solid black;
-	
+	padding-right: 20%;
 	margin: 0 auto;
 }
 .slider2 ul{
